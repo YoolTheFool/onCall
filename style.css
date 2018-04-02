@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: black;
+}
+/* p{
+  margin:0;
+  padding: 100px;
+} */
+
+canvas {
+z-index: 0;
+left: 0;
+position: absolute;
+}
+
+.visualText{
+  z-index: 1;
+  position: relative;
+  color:white;
+  font-size: 2em;
+  font-family: Courier;
+  margin:0;
+  padding: 200px;
+}
+
+.visualText2{
+  z-index: 1;
+  color:white;
+  font-size: 2em;
+  font-family: Courier;
+}
+.visualText1{
+  z-index: 1;
+  color:white;
+  font-size: 3em;
+  font-family: Courier;
+}
