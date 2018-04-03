@@ -1,9 +1,4 @@
-// function preload(){
-//   song1 = loadSound("fullNoLSM3.wav");
-//   song2 = loadSound("LSMNoChord.wav");
-//   song3 = loadSound("TUBE.wav");
 
-// }
 
 let order = [
   {
@@ -605,7 +600,7 @@ let isYes = false;
 
 //Visuals
 var bugs = []; // array of Jitter objects
-var length = 100
+var length = 130
 const time1 = 117;
 const time2 = 180;
 const time3 = 240;
@@ -849,7 +844,7 @@ function Jitter() {
     };
 
     this.display2 = function() {
-      this.multi = [-1.5,1.5];
+      this.multi = [-2,2];
       noStroke();
       fill(random(0,255),0,0,this.alpha);
       ellipse(this.x, this.y, this.diameter, this.diameter);
@@ -896,7 +891,7 @@ function Jitter() {
         this.speedA = -this.speedA;
 
       }
-      this.diameter += 100;
+      this.diameter += 50;
 
     };
 
