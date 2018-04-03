@@ -837,7 +837,7 @@ function Jitter() {
     this.display1 = function() {
 
       noStroke();
-      fill(random([0,255]),0,0,this.alpha);
+      fill(random(0,200),this.alpha);
       ellipse(this.x, this.y, this.diameter, this.diameter);
       this.alpha += this.speedA;
 
@@ -851,7 +851,7 @@ function Jitter() {
     this.display2 = function() {
       this.multi = [-2,2];
       noStroke();
-      fill(random([0,255]),0,0,this.alpha);
+      fill(random(0,200),this.alpha);
       ellipse(this.x, this.y, this.diameter, this.diameter);
       this.alpha += this.speedA*2;
 
@@ -864,7 +864,7 @@ function Jitter() {
       this.multi = [-3,3];
       this.alphaMax = 70;
       noStroke();
-      fill(random([0,255]),0,0,this.alpha);
+      fill(random(0,200),this.alpha);
       ellipse(this.x, this.y, this.diameter, this.diameter);
       this.alpha += this.speedA*8;
 
@@ -878,7 +878,7 @@ function Jitter() {
       this.multi = [-4,4];
       this.alphaMax = 100;
       noStroke();
-      fill(random([100,255]),0,0,this.alpha);
+      fill(random(0,200),this.alpha);
       ellipse(this.x, this.y, this.diameter, this.diameter);
       this.alpha += this.speedA*10;
       if (this.alpha > this.alphaMax || this.alpha < 0) {
@@ -890,14 +890,14 @@ function Jitter() {
     this.display5 = function() {
 
       noStroke();
-      fill(random([100,255]),0,0,this.alpha);
+      fill(random(0,200),this.alpha);
       ellipse(this.x, this.y, this.diameter, this.diameter);
       this.alpha -= this.speedA;
       if (this.alpha > this.alphaMax || this.alpha < 0) {
         this.speedA = -this.speedA;
 
       }
-      this.diameter += 30;
+      this.diameter += 50;
 
     };
 
