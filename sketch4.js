@@ -631,7 +631,7 @@ function setup(){
   startButton.position(window.innerWidth/2 + 10, window.innerHeight - 300);
   startButton.mousePressed(letsGo);
   button1 = createButton('YES');
-  button1.position(window.innerWidth/2 - 85, window.innerHeight - 200);
+  button1.position(window.innerWidth/2 - 95, window.innerHeight - 200);
   button1.mousePressed(buttonYES);
   button1.hide();
   button2 = createButton('NO');
