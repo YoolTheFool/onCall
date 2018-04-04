@@ -606,6 +606,7 @@ const time2 = 180;
 const time3 = 240;
 const time4 = 260;
 const time5 = 276;
+let al = 300;
 
 
   let clock = document.createElement('p');
@@ -685,7 +686,7 @@ function draw(){
         noStroke();
         fill(255,0,0,al)
         rect(0,0,window.innerWidth,window.innerHeight);
-        al-- ;
+        al = al-1 ;
     }
 }
 
@@ -813,7 +814,7 @@ function Jitter() {
   //this.col = (255,0,0);
   this.alpha = 2;
   this.speedA = 1;
-  this.multi = [-1,1];
+  this.multi = [-2,2];
   this.alphaMax = 20;
 
   this.move = function() {
@@ -845,8 +846,8 @@ function Jitter() {
     };
 
     this.display2 = function() {
-      this.multi = [-2,2];
       noStroke();
+      this.alphaMax = 50;
       fill(random(0,255),0,0,this.alpha);
       ellipse(this.x, this.y, this.diameter, this.diameter);
       this.alpha += this.speedA*2;
