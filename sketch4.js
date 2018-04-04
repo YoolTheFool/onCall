@@ -681,10 +681,11 @@ function draw(){
       }
     }
     if (currentSeconds > time5){
-      for (var i = 0; i < bugs.length; i++) {
-        bugs[i].move();
-        bugs[i].display5();
-      }
+      background(0);
+        noStroke();
+        fill(255,0,0,al)
+        rect(0,0,window.innerWidth,window.innerHeight);
+        al-- ;
     }
 }
 
@@ -881,19 +882,19 @@ function Jitter() {
 
       }
     };
-    this.display5 = function() {
+//     this.display5 = function() {
 
-      noStroke();
-      fill(random(0,255),0,0,this.alpha);
-      ellipse(this.x, this.y, this.diameter, this.diameter);
-      this.alpha -= this.speedA;
-      if (this.alpha > this.alphaMax || this.alpha < 0) {
-        this.speedA = -this.speedA;
+//       noStroke();
+//       fill(random(0,255),0,0,this.alpha);
+//       ellipse(this.x, this.y, this.diameter, this.diameter);
+//       this.alpha -= this.speedA;
+//       if (this.alpha > this.alphaMax || this.alpha < 0) {
+//         this.speedA = -this.speedA;
 
-      }
-      this.diameter += 50;
+//       }
+//       this.diameter += 50;
 
-    };
+//     };
 
 
     // this.changeAlphaMax = function() {
