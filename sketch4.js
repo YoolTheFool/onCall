@@ -554,7 +554,7 @@ let order = [
     hidden: false
   },
   {
-    text: 'Master weapons - ARM',
+    text: 'Master weapon - ARM',
     show_time: 270,
     show_duration: 3,
     shown: false,
